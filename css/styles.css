@@ -42,6 +42,8 @@ h3 {
 
  /* Header styles */
 
+ /* General */
+
  header {
      height: 80px;
      background: #161616;
@@ -58,7 +60,9 @@ h3 {
 
 }
 
-     header ul {
+    /* Desktop */
+
+     .desktop-nav ul {
          background: red;
          float: right;
          margin-top: 10px;
@@ -68,22 +72,21 @@ h3 {
 
      }
 
-header li {
+.desktop.nav li {
     display: inline-block;
     margin-left: 25px;
 }
 
-header a
-header a :visited {
+.desktop-nav a
+.desktop.nav a :visited {
     color: white;
     font-family: 'Oswald', sans-serif;
-    font-size: 12px;
     text-transform: uppercase;
 }
 
 
- header a :hover,
- header a :visited,
+ .desktop-nav a :hover,
+ .desktop-nav a :visited,
           :focus,
           :active{
      opacity: 0.9;
@@ -96,10 +99,13 @@ header a :visited {
  }
 
 
+/* Mobile */
+
 .mobile-nav {
     display: none;
     text-align: center;
 }
+
 .mobile-nav .logo {
     displayL: inline-block;
 }
@@ -107,6 +113,7 @@ header a :visited {
 
 .mobile-nav .hamburger-container,
 .mobile-nav .search-container {
+    vertical-align: top;
     width: 40px;
     display: inline-block;
     background: red;
@@ -137,16 +144,21 @@ header a :visited {
     }
 
 }
+
+/* Hero Styles */
+
  .hero {
      height: 400px;
      background: #999;
  }
 
+/* Product line-up */
 .product-lineup-container {
     height: 400px;
     background: #333;
 }
 
+/* featured product */
 .featured-product-container {
     height: 400px;
     background:  #444
@@ -154,6 +166,7 @@ header a :visited {
 
 }
 
+/* Subscription*/
 .subsctription-container {
     height: 400px;
     background: #666;
